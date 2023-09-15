@@ -12,6 +12,165 @@
     <title>Haven Studio</title>
   </head>
   <body>
-    <h1>PAGINA EN CONSTRUCCION</h1>
+    <header>
+      <img src="assets/logo.svg" alt="Logo Haven" class="logotype" />
+      <nav>
+        <ul>
+          <li>INICIO</li>
+          <li>SERVICIOS</li>
+          <li>RESERVA</li>
+          <li>ACERCA</li>
+          <li>CONTACTO</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <img
+          src="assets/image-main.jpg"
+          alt="imagen principal haven"
+          class="slider"
+        />
+      </section>
+      <article class="services">
+        <img src="assets/manicure.jpg" alt="manicure" />
+        <span>Manicure</span>
+        <img src="assets/pedicure.jpg" alt="pedicure" />
+        <span>Pedicure</span>
+        <img src="assets/lifting.jpg" alt="lifting" />
+        <span>Lifting</span>
+        <img src="assets/depilacion.png" alt="depilacion" />
+        <span>Depilacion Facial</span>
+      </article>
+      <article class="reservation">
+        <form class="reserva-form" action="" method="" autocomplete="off">
+          <input
+            type="text"
+            class="text"
+            name="nombre"
+            placeholder="Escribe tu nombre."
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            title="Solo puedes ingresar letras"
+            required
+          />
+          <input
+            type="text"
+            class="text"
+            name="apellido"
+            placeholder="Escribe tu apellido."
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            title="Solo puedes ingresar letras"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            class="email"
+            placeholder="Escribe tu correo electronico"
+            pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+            title="Debes ingresar un formato correcto para email"
+            required
+          />
+          <label for="fecha">Dia de la reserva:</label>
+          <input
+            type="date"
+            name="date"
+            class="fecha"
+            placeholder="Escribe tu apellido."
+            title="Debe ingresar una fecha correcta"
+            required
+          />
+          <label for="hora">Hora de la reserva:</label>
+          <input
+            type="time"
+            name="hora"
+            title="Debe ingresar una hora correcta"
+            required
+          />
+          <p>Seleccione el servicio deseado:</p>
+          <label>
+            <input type="checkbox" name="servicios" value="manicure" />
+            Manicure
+          </label>
+          <label>
+            <input type="checkbox" name="servicios" value="pedicure" />
+            Pedicure
+          </label>
+          <label>
+            <input type="checkbox" name="servicios" value="lifting" />
+            Lifting de Pestaña
+          </label>
+          <label>
+            <input type="checkbox" name="servicios" value="cejas" />
+            Cejas
+          </label>
+          <label>
+            <input type="checkbox" name="servicios" value="bozo" />
+            Bozo
+          </label>
+          <label>
+            <input type="checkbox" name="servicios" value="pera" />
+            Barbilla
+          </label>
+          <label>
+            <input type="checkbox" name="servicios" value="patillas" />
+            Patillas
+          </label>
+          <p>Puedes realizarme alguna indicacion o comentario:</p>
+          <textarea
+            name="observaciones"
+            cols="50"
+            rows="5"
+            placeholder="Deseas agregar algo?"
+            data-pattern="^.{1,255}$"
+            title="Tu comentario no debe exceder los 255 caracteres"
+          ></textarea>
+          <div class="botones">
+            <input type="submit" value="Reserva" />
+            <input type="reset" value="Borrar" />
+          </div>
+          <div class="reserva-form-loader none">
+            <img src="assets/rings.svg" alt="Cargando" />
+          </div>
+          <div class="reserva-form-respuesta none">
+            <p>Los datos han sido enviados</p>
+          </div>
+        </form>
+      </article>
+      <aside class="about">
+        <img
+          src="assets/about-logotype.jpg"
+          alt="acerca de haven"
+          class="logotype"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          ad doloremque cupiditate praesentium id voluptatem natus, repellat
+          culpa corrupti eum dolorem itaque unde minus harum nam in ipsam rem
+          tempore?
+        </p>
+      </aside>
+      <aside class="contact">
+        <div>
+          <span>+56 9 9212 3086</span>
+          <span>havenstudio@gmail.com</span>
+          <span>haven.stu</span>
+          <span>Santa Elena 1722, Santiago, Santiago de Chile</span>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.3452471129303!2d-70.63045842450974!3d-33.46636109832685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c55dd47ce5cd%3A0xc54bf9dc7d7612a7!2sSta.%20Elena%201722%2C%208360595%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1694789403399!5m2!1ses-419!2scl"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </aside>
+    </main>
+    <footer>
+      <span>Copyright (c) 2023 Haven</span>
+      <span>MIT License</span>
+    </footer>
   </body>
 </html>
