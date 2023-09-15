@@ -8,32 +8,89 @@
       content="Relajarte mientras te arreglas las uñas, pestañas, cejas y mas. Servicios de manicura y pedicura. Manicure permanente. Manicure Semi Permanente. Manos Tradicionales."
     />
     <link rel="icon" href="assets/" type="image/x-icon" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/normalize.css  " />
     <link rel="stylesheet" href="css/style.css" />
     <title>Haven Studio</title>
   </head>
   <body>
     <header>
-      <img src="assets/logo.svg" alt="Logo Haven" class="logotype" />
+      <a href="index.html">
+        <img src="assets/logo.svg" alt="Logo Haven" class="logotype" />
+        <span>HAVEN STUDIO</span>
+      </a>
+      <button class="menu-btn">
+        <svg
+          width="30px"
+          height="30px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 18L20 18"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <svg
+          width="30px"
+          height="30px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_105_1866)">
+            <path
+              d="M18 3.00098L18 21.001M12 3.00098L12 21.001M6 3.00098L6 21.001"
+              stroke="#292929"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </g>
+
+          <defs>
+            <clipPath id="clip0_105_1866">
+              <rect
+                fill="white"
+                height="24"
+                transform="translate(0 0.000976562)"
+                width="24"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
       <nav>
-        <ul>
-          <li>INICIO</li>
-          <li>SERVICIOS</li>
-          <li>RESERVA</li>
-          <li>ACERCA</li>
-          <li>CONTACTO</li>
-        </ul>
+        <a href="#inicio">INICIO</a>
+        <a href="#servicios">SERVICIOS</a>
+        <a href="#reserva">RESERVA</a>
+        <a href="#acerca">ACERCA</a>
+        <a href="#contacto">CONTACTO</a>
       </nav>
     </header>
     <main>
-      <section>
+      <section id="inicio">
         <img
           src="assets/image-main.jpg"
           alt="imagen principal haven"
           class="slider"
         />
       </section>
-      <article class="services">
+      <article class="services" id="servicios">
         <img src="assets/manicure.jpg" alt="manicure" />
         <span>Manicure</span>
         <img src="assets/pedicure.jpg" alt="pedicure" />
@@ -43,7 +100,7 @@
         <img src="assets/depilacion.png" alt="depilacion" />
         <span>Depilacion Facial</span>
       </article>
-      <article class="reservation">
+      <article class="reservation" id="reserva">
         <form class="reserva-form" action="" method="" autocomplete="off">
           <input
             type="text"
@@ -138,7 +195,7 @@
           </div>
         </form>
       </article>
-      <aside class="about">
+      <aside class="about" id="acerca">
         <img
           src="assets/about-logotype.jpg"
           alt="acerca de haven"
@@ -151,12 +208,25 @@
           tempore?
         </p>
       </aside>
-      <aside class="contact">
+      <aside class="contact" id="contacto">
         <div>
-          <span>+56 9 9212 3086</span>
-          <span>havenstudio@gmail.com</span>
-          <span>haven.stu</span>
-          <span>Santa Elena 1722, Santiago, Santiago de Chile</span>
+          <span
+            ><img src="assets/message-check-circle.svg" alt="whatsapp" />+56 9
+            9212 3086</span
+          >
+          <span
+            ><img
+              src="assets/mail-02@2x.svg"
+              alt="email"
+            />havenstudio@gmail.com</span
+          >
+          <span
+            ><img src="assets/camera-01.svg" alt="instagram" />haven.stu</span
+          >
+          <span
+            ><img src="assets/marker-pin-01.svg" alt="" />Santa Elena 1722,
+            Santiago, Santiago de Chile</span
+          >
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.3452471129303!2d-70.63045842450974!3d-33.46636109832685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c55dd47ce5cd%3A0xc54bf9dc7d7612a7!2sSta.%20Elena%201722%2C%208360595%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1694789403399!5m2!1ses-419!2scl"
